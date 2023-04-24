@@ -9,16 +9,20 @@ function Park({ pageContext }) {
   return (
     <Layout pageTitle={park.fullName}>
       <p>
-        <img src={park.images[0].url} width="100%" alt={park.images[0].title} />
+        <img
+          src={park.images[0]?.url}
+          width="100%"
+          alt={park.images[0]?.title}
+        />
       </p>
-      <p className="caption">{park.images[0].title}</p>
+      <p className="caption">{park.images[0]?.title}</p>
       <p className="description">{park.description}</p>
       <h4>Address:</h4>
       <p>
-        {park.addresses[0].line1}
+        {park.addresses[0]?.line1}
         <br />
-        {park.addresses[0].city}, {park.addresses[0].stateCode}{" "}
-        {park.addresses[0].postalCode}
+        {park.addresses[0]?.city}, {park.addresses[0]?.stateCode}{" "}
+        {park.addresses[0]?.postalCode}
       </p>
       <h4>For more information:</h4>
       <p>
