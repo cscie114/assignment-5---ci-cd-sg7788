@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import fetch from "node-fetch";
 
-const WeatherPage = ({ pageContext }) => {
-  const { park } = pageContext;
+const WeatherPage = () => {
   const [weatherData, setWeatherData] = useState({ features: [] });
   //const requestUrl = `/.netlify/functions/weatherApi?state=${park.addresses[0].stateCode}`;
 
