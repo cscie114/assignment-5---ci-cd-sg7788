@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import fetch from "node-fetch";
 
 const WeatherPage = () => {
-  const [weatherData, setWeatherData] = useState({ features: [] });
+  const [weatherData, setWeatherData] = useState({});
   //const requestUrl = `/.netlify/functions/weatherApi?state=${park.addresses[0].stateCode}`;
 
   useEffect(() => {
@@ -30,8 +30,8 @@ const WeatherPage = () => {
             return (
               <li key={key}>
                 <strong>{key}:</strong>
-                {value.toString()}
-                {/* {JSON.stringify(value)} */}
+                {/* {value.toString()} want to clean this up */}
+                {JSON.stringify(value)}
               </li>
             );
           })}
