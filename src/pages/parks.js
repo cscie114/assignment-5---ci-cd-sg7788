@@ -10,7 +10,7 @@ const ParksList = ({ data }) => {
   // list all of the parks
   return (
     <div>
-      <Layout pageTitle="All Parks">
+      <Layout pageTitle="All Parks" data-testid="parks-title">
         <ul>
           {parks.map((park) => {
             return (

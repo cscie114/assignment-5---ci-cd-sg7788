@@ -1,4 +1,5 @@
 import * as React from "react";
+import "../styles/global.css";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout.js";
 const IndexPage = () => {

@@ -7,7 +7,7 @@ function Park({ pageContext }) {
 
   // display individual park information
   return (
-    <Layout pageTitle={park.fullName}>
+    <Layout pageTitle={park.fullName} datatest-id="park-title">
       <p>
         <img
           src={park.images[0]?.url}

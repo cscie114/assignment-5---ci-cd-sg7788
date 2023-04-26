@@ -9,12 +9,13 @@ const Layout = ({ pageTitle, children }) => {
         <nav>
           <p>
             <Link to="/">Home</Link> |{" "}
-            <Link to="/parks">All National Parks</Link>
+            <Link to="/parks">All National Parks</Link> |{" "}
+            <Link to="/weather">Weather Alerts</Link>
           </p>
         </nav>
       </header>
       <main>
-        <h2>{pageTitle}</h2>
+        <h2 data-testid="page-title">{pageTitle}</h2>
         {children}
       </main>
     </div>
